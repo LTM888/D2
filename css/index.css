@@ -8,7 +8,7 @@
 body {
   font: normal 18px/1.5 monospace;
   overflow: hidden;
-background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+  background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
   -o-animation:100s scroll infinite linear;
@@ -18,6 +18,7 @@ background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/
   left:0;
   width:100%;
  height:100%;
+ font-family: 'Lexend Exa', sans-serif;
 }
 
 
@@ -313,7 +314,6 @@ background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/
 
 /* bottom */
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -325,7 +325,6 @@ button {
   outline: none;
   cursor: pointer;
 }
-
 
 
 .over-visible {
