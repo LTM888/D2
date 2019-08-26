@@ -32,6 +32,9 @@ body{
   top: 0;
 }
 
+header{
+  height: 500px;
+}
 
 
 @-webkit-keyframes scroll{
