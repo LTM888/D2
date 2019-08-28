@@ -6,7 +6,7 @@
 }
 
 body {
-  font: normal 18px/1.5 monospace;
+  
   overflow: hidden;
   background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
   -webkit-animation:100s scroll infinite linear;
@@ -21,7 +21,12 @@ body {
  font-family: 'Lexend Exa', sans-serif;
 }
 
-
+@media screen and (max-width:550px) {
+.navbar a {
+  font-size: 19px;
+  
+  }
+}
 
 
 
@@ -108,7 +113,7 @@ body {
 #lab_video_text_overlay .container {
   text-align: center;
   margin: 0px auto;
-//  background-color: #669900;
+  background-color: #669900;
 }
 
 @media screen and (max-width:991px) {
@@ -218,7 +223,8 @@ body {
 	 padding: 1rem;
 	 background: #fff;
 	 position: relative;
-	 z-index: 1;
+   z-index: 1;
+   
 }
  .blog-card .description h1, .blog-card .description h2 {
 	 font-family: Poppins, sans-serif;
@@ -420,6 +426,7 @@ button {
 }
 
 @media screen and (min-width: 480px) {
+
   .synch-carousels .right {
     margin-bottom: 20px;
   }

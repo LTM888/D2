@@ -23,6 +23,13 @@ body {
   
 }
 
+@media screen and (max-width:550px) {
+.navbar a {
+  font-size: 19px;
+  
+  }
+}
+
 #contact {
   width: 100%;
   height: 100vh;

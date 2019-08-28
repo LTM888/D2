@@ -57,6 +57,13 @@ body{
 .my-nav {
     background-color: black;
 }
+
+@media screen and (max-width:550px) {
+.navbar a {
+  font-size: 19px;
+  
+  }
+}
 /* slider */
 
 .flickity-enabled {
