@@ -8,6 +8,7 @@ $(function () {
 
 });
 
+
 (function () {
     function loadJS(u) { var r = document.getElementsByTagName("script")[0], s = document.createElement("script"); s.src = u; r.parentNode.insertBefore(s, r); }
 
@@ -29,10 +30,7 @@ $(function () {
     window.lazySizesConfig.expFactor = 1.6;
 }());
 
-/*
-    for this demo not needed because we use CSS intrinsic sizing,
-    but really useful if you deal with responsive images or lazyloaded images
-*/
+
 (function () {
     var oldFlickityCreate = window.Flickity.prototype._create;
 

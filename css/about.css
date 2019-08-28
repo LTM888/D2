@@ -9,8 +9,7 @@ header{
 }
 
 body{
-
-  font-family: 'Lexend Exa', sans-serif;
+font-family: 'Lexend Exa', sans-serif;
 }
 .scrolled {background-color: rgba(0,0,0,.5);}
 
@@ -28,7 +27,9 @@ body{
 #container {width:100%;}
 section { padding: 5% 15%; margin: 0 auto;}
 
-
+p {
+  line-height: 1.8;
+}
 
 /* Footer */
 
@@ -42,14 +43,15 @@ section { padding: 5% 15%; margin: 0 auto;}
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
-  line-height: 99%;
-  fon
+  
+  
 }
 
 .footer-distributed .footer-left p {
   color: #8f9296;
   font-size: 14px;
   margin: 0;
+  
 }
 /* Footer links */
 

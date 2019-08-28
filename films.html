@@ -6,50 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.css">
     <link rel="stylesheet" href="./css/films.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+    
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <div id="captioned-gallery">
-            <figure class="slider">
-                <figure>
-                    <img src="./img/films/FullSizeRender-6.jpg" alt style="height: 500px" >
-                    <!-- <figcaption>Hobbiton, New Zealand</figcaption> -->
-                </figure>
-                <figure>
-                    <img src="./img/sundance/3.jpg" alt style="height: 500px">
-                    <!-- <figcaption>Wanaka, New Zealand</figcaption> -->
-                </figure>
-                <figure>
-                    <img src="./img/sundance/mgood.jpg" alt style="height: 500px">
-                    <!-- <figcaption>Utah, United States</figcaption> -->
-                </figure>
-                <figure>
-                    <img src="./img/sundance/fullstage.jpg" alt style="height: 500px">
-                    <!-- <figcaption>Bryce Canyon, Utah, United States</figcaption> -->
-                </figure>
-                <figure>
-                    <img src="./img/largeLogo.jpg" alt style="height: 500px">
-                     
-              </figure> 
-            </figure>
+        <div class="gallery js-flickity">
+            <div class="gallery-cell">
+                <div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+                    <img src="./img/films/FullSizeRender-6.jpg" srcset="./img/films/FullSizeRender-6.jpg"
+                        sizes="99vw" />
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+                    <img src="./img/sundance/3.jpg" sizes="99vw" data-srcset="./img/sundance/3.jpg" class="lazyload" />
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+                    <img src="./img/sundance/mgood.jpg" sizes="99vw" data-srcset="./img/sundance/mgood.jpg"
+                        class="lazyload" />
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+                    <img src="./img/sundance/fullstage.jpg" sizes="99vw" data-srcset="./img/sundance/fullstage.jpg"
+                        class="lazyload" />
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+                    <img src="./img/largeLogo.jpg" sizes="99vw" data-srcset="./img/largeLogo.jpg" class="lazyload" />
+                </div>
+            </div>
         </div>
 
     </header>
-    <nav class="navbar navbar-expand-lg my-nav navbar-dark ">
+    <nav class="navbar navbar-expand-lg my-nav navbar-dark">
         <a class="navbar-brand" href="#">Datari Turner Production</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
@@ -73,6 +84,12 @@
 
     <section class="items">
         <div class="carouselOfImages">
+            <div class="carouselImage" style="background-size:cover;">
+                <img data-tab="boy" src="img/films/aboyjpg.jpg" />
+            </div>
+            <div class="carouselImage" style="background-size:cover;">
+                <img data-tab="same" src="./img/films/Same-Difference-poster.jpg" />
+            </div>
             <div class="carouselImage" style="background-size:cover;">
                 <img data-tab="luv" src="./img/films/LUV.png" />
             </div>
@@ -139,13 +156,62 @@
             <div class="carouselImage" style="background-size:cover;">
                 <img data-tab="kid" src="img/films/bigkid.jpg" />
             </div>
+
+            <div class="carouselImage" style="background-size:cover;">
+                <img data-tab="lights" src="img/films/light.jpeg" />
+            </div>
+            <div class="carouselImage" style="background-size:cover;">
+                <img data-tab="back" src="img/films/back.jpg" />
+            </div>
         </div>
     </section>
 
-    <section class="product-detail luv hide">
+    <section class="product-detail boy hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image">
-                <img src="./img/films/LUV.png" /></div>
+                <img src="" /></div>
+            <div class="product-detail-text">
+                <h3>A Boy. A Girl. A Dream</h3>
+                <p>On the night of the 2016 Presidential election, Cass, an L.A. club promoter, takes a thrilling and
+                    emotional journey
+                    with Frida, a Midwestern visitor. She challenges him to revisit his broken dreams - while he pushes
+                    her to discover
+                    hers.</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb: <a href="https://www.imdb.com/title/tt6905402/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date:September 14, 2018</h5>
+                    </div>
+                    <a data-target=".modal-1" data-toggle="modal"
+                        data-the-video="https://www.youtube.com/embed/YtdcvNnqqrg?" type="text/html"
+                        class="btn btn-primary">watch now</a>
+                </div>
+    </section>
+    <section class="product-detail same hide">
+        <div class="product-detail-inner"><a class="product-detail-close">X</a>
+            <div class="product-detail-image">
+                <img src="" /></div>
+            <div class="product-detail-text">
+                <h3>Same Difference</h3>
+                <p>As Tonya Keating grapples with the innate knowledge that her death is imminent, she is compelled to let go of the past
+                and reconcile with her estranged twin sister.</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb: <a href="https://www.imdb.com/title/tt7690554/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date:June 14, 2019</h5>
+                    </div>
+                    <a data-target=".modal-1" data-toggle="modal"
+                        data-the-video="https://vimeo.com/331449430" type="text/html"
+                        class="btn btn-primary">watch now</a>
+                </div>
+    </section>
+    <section class="product-detail luv hide">
+        <div class="product-detail-inner"><a class="product-detail-close">X</a>
+            <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
                 <h3>LUV</h3>
                 <p>LUV premiered at Sundance Film
@@ -158,19 +224,20 @@
                     a drug deal.</p>
                 <div class="price">
                     <div class="price-binding">
-                        <h4>İmdb:</h4>
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1907707/" target="_blank">read</a></h4>
                     </div>
                     <div class="price-price">
-                        <h5>Date:</h5>
+                        <h5>Date: November 9, 2012</h5>
                     </div>
-                    <a data-target=".modal-1" data-toggle="modal"
-                        data-the-video="https://youtu.be/w-fJepzj7u8?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                        class="btn btn-primary">Watch Me</a>
                 </div>
+                <a data-target=".modal-1" data-toggle="modal"
+                    data-the-video="https://www.youtube.com/embed/ph1TwXevI7o?" class="btn btn-primary">watch now</a>
+            </div>
+        </div>
     </section>
     <section class="product-detail cherry hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
-            <div class="product-detail-image"><img src="./img/films/aboutcherry.png" /></div>
+            <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
                 <h3>About Cherry</h3>
                 <p>While working on “LUV” Turner also
@@ -182,24 +249,23 @@
                     catches the eye of both a lawyer....</p>
                 <div class="price">
                     <div class="price-binding">
-                        <h4>İmbdb:</h4>
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1945062/" target="_blank">read</a></h4>
                     </div>
                     <div class="price-price">
-                        <h5>Date:</h5>
+                        <h5>Date: September 21, 2012</h5>
                     </div>
                 </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/XtEcU3tkZBc?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/q_DvMJpUtwc?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
-        </div>
     </section>
-    <section class="product-detail salvation hide">
+    <section class="product-detail salvation  hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
                 <h3>Salvation Boulevard</h3>
-                <p> “Salvation Boulevard” starred
+                <p>“Salvation Boulevard” starred
                     Oscar Winners Marisa Tomei and Jennifer Connolly in
                     addition to A- List veterans Pierce Brosnan and Ed
                     Harris. A man (Greg Kinnear) becomes the target of a fundamentalist preacher's (Pierce Brosnan)
@@ -207,16 +273,17 @@
                     the preacher accidenyally shoot an...</p>
                 <div class="price">
                     <div class="price-binding">
-                        <h4>İmbdb:</h4>
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1251743/" target="_blank">read</a></h4>
                     </div>
                     <div class="price-price">
-                        <h5>Date:</h5>
+                        <h5>Date: July 15, 2011</h5>
                     </div>
                 </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/fdu10cX3pWA?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/TYiYHfciJwE?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
+        </div>
     </section>
     <section class="product-detail video hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
@@ -233,15 +300,15 @@
                     finds that fame has a dark side.</p>
                 <div class="price">
                     <div class="price-binding">
-                        <h4>İmbdb:</h4>
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1542488/" target="_blank">read</a></h4>
                     </div>
                     <div class="price-price">
-                        <h5>Date:</h5>
+                        <h5>Date: October 11, 2011</h5>
                     </div>
                 </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/ke79K4bO4P8?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/ACCSgPrNHJM?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -252,9 +319,17 @@
                 <h3>Adulterers</h3>
                 <p>A husband comes home early on his wedding anniversary and finds his wife in
                     bed with another man. The lovers quickly learn how far a jealous husband...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt4044464/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: January 5, 2016</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/ke79K4bO4P8?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/pzZBcaidTy8?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -271,13 +346,21 @@
                     'T.O.' Owens in his acting debut. Nine estranged pals have to spend a weekend reconnecting and
                     working through their
                     issues at a deceased friends's estate so they can colect their...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1653002/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: February 3, 2012</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/XGk2EfbD_Ps?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/_K_-EmZaE_U?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
-    <section class="product-detail growing hide">
+    <section class="product-detail  growing hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
@@ -289,26 +372,42 @@
                     and is currently the highest rated television series on WETV. Growing up with fsmous parents isn't
                     easy, as the children
                     often have to work hard to emerge from their parents' shadows and gain independence...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt5035202/" target="_blank"> read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: 2016</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/7GqClqvlObY?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/MjHpvznaQDQ?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
-    <section class="product-detail atlanta hide">
+    <section class="product-detail  atlanta hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
                 <h3>Growing Up Hip-Hop Atlanta</h3>
                 <p>Growing Up Hip-Hop Atlanta , the first spin-
                     off from the franchise, premiered last year to ratings records.</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt6905508/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: 2017</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/PWsXQKv6UiA?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Watch Me</a>
+                    data-the-video="https://www.youtube.com/embed/wccRPlKo118?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
-    <section class="product-detail day hide">
+    <section class="product-detail day  hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
@@ -319,9 +418,17 @@
                     attends her son's wedding
                     at the
                     estate of her ex-husband(Thomas Haden Church).</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1719071/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: December 8, 2011</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/66TuSJo4dZM?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/sc0yid4l67k?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -335,9 +442,17 @@
                     Sundance Film in five years.A teen (Asa Butterfield), a pregnant girl (Hailee Steinfeld) and the
                     lead singer
                     (Emile Hirsch) of a punk-rock band form their own surrogate family...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt3397754/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: August 14, 2015</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/SUXWAEX2jlg?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/aZp3f8dfCjo?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -350,9 +465,17 @@
                     Abigail Spencer premiered at SXSW in 2013. After his girlfriend moves out, a man (Brian Geraghty)
                     decides to climb Mount
                     Kilimanjaro as step one toward living a more fulfilling life</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt2385119/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: March 9, 2013</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/M8CnVfZ4jPw?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -367,9 +490,17 @@
                     and America
                     Ferrera. Four couples having Sunday brunch become stuck together in a house when
                     they learn the world is ending</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com//title/tt1995341" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: June 7, 2013</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/EWCYQm7eH7s?" type="text/html" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -379,9 +510,17 @@
             <div class="product-detail-text">
                 <h3>Lisa Raye, The Real MaCoy</h3>
                 <p>Lisa Raye stars in her own reality show along with her daughter kai.</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1626437/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: 2010</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/j0Jf36pCvkk?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -392,9 +531,17 @@
                 <h3>9 Rides</h3>
                 <p>“9 Rides” produced by Turner premiered at the SXSW
                     Film Festival to critical acclaim. A Uber driver gets life-changing news while on duty.</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt5307272/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: March 11, 2016</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/66jY579UPW4?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -407,9 +554,17 @@
                     Beauvais, premiered at the LA Film Festival last June. Seventeen-year-old Grace (Ryan Destiny) has
                     been
                     raised by her single mother (Garcelle Beauvais), Lisa, in a rather dysfunctional enivironment...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt3507138/" target="_blank"> read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: June 12, 2015</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/YbhO7YZ5y9Q?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
@@ -422,14 +577,21 @@
                     Hemingway, Briana Evigan, Omari Hardwick and LisaRaye. A woman(Ali Cobrin) becomes an exotic dancer
                     to help pay her
                     cancer stricken father's medical bills, but once she gets a taste of the enchanting...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt2392385/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: December 5, 2014</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/Jkjk_PSqLNg?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
-
-    <section class="product-detail jackie hide">
+    <section class="product-detail jackie  hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
@@ -438,13 +600,67 @@
                     Turner is Associate Producer on Jackie and Ryan. A chance encounter leads to romance between a
                     down-and-out
                     , former country-music star (Katherine Heigl) and a guitar-strumming drifter (Ben Barnes)...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt3270108/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: January 5, 2016</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/GEeEkoEvXeY?" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
-    <section class="product-detail kid hide">
+    <section class="product-detail grace hide">
+        <div class="product-detail-inner"><a class="product-detail-close">X</a>
+            <div class="product-detail-image"><img src="" /></div>
+            <div class="product-detail-text">
+                <h3>A Girl Like Grace</h3>
+                <p>'A Girl Like Grace' produced and co-starred in by Turner,stars Meagan Good, Raven Symone and Garcelle
+                    Beauvais, premiered at the LA Film Festival last June. Seventeen-year-old Grace (Ryan Destiny) has
+                    been
+                    raised by her single mother (Garcelle Beauvais), Lisa, in a rather dysfunctional enivironment...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt3507138/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: June 12, 2015</h5>
+                    </div>
+                </div>
+                <a data-target=".modal-1" data-toggle="modal"
+                    data-the-video="https://www.youtube.com/embed/YbhO7YZ5y9Q?" type="text/html"
+                    class="btn btn-primary">watch now</a>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail lap hide">
+        <div class="product-detail-inner"><a class="product-detail-close">X</a>
+            <div class="product-detail-image"><img src="" /></div>
+            <div class="product-detail-text">
+                <h3>Lap Dance</h3>
+                <p>Turner produced, co-wrote and co-starred in the film 'Lap Dance' starring James Remar, Mariel
+                    Hemingway, Briana Evigan, Omari Hardwick and LisaRaye. A woman(Ali Cobrin) becomes an exotic dancer
+                    to help pay her
+                    cancer stricken father's medical bills, but once she gets a taste of the enchanting...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt2392385/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: December 5, 2014</h5>
+                    </div>
+                </div>
+                <a data-target=".modal-1" data-toggle="modal"
+                    data-the-video="https://www.youtube.com/embed/Jkjk_PSqLNg?" type="text/html"
+                    class="btn btn-primary">watch now</a>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail kid  hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
@@ -453,13 +669,22 @@
                     Turner is credited as an Executive Producer on Kid Cannabis. A high school dropout and his
                     27-year-old friend smuggle
                     marijuana across the Canadian border to make money...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt0780548/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: April 18, 2014</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/U1_casgexVE?" type="text/html" type="text/html"
+                    class="btn btn-primary">watch now</a>
             </div>
         </div>
     </section>
-    <section class="product-detail morning hide">
+
+    <section class="product-detail  morning  hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
@@ -470,9 +695,17 @@
                     parted ways, a
                     woman(Alice Eve) receives about a
                     surprise visit from her former lover (Stanley Tucci), who arrives with suitcase...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt2231138/" target="_blank"> read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: December 10, 2013</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/DQZoD3Q8yKE?" type="text/html"
+                    class="btn btn-primary">watch me</a>
             </div>
         </div>
     </section>
@@ -488,27 +721,41 @@
                     , two Korean American brothers who own a struggling women's shoe store, have an unlikely friendship
                     with
                     11-year-old Kamilla. On the ...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt6057032/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: January 19, 2018</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/-H49un-efUw?" type="text/html"
+                    class="btn btn-primary">watch me</a>
             </div>
         </div>
     </section>
-    <section class="product-detail ultimate  hide">
+    <section class="product-detail ultimate hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
                 <h3>Ultimate Hustler</h3>
                 <p>Ultimate Hustler was an American reality show broadcast on Black Entertainment Television
                     (BET) created by Datari Turner. The show featured Damon Dash...</p>
-                <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt0472025/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: 2015</h5>
+                    </div>
+                </div>
+                <!-- <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/-H49un-efUw?"
+                type="text/html" class="btn btn-primary">watch me</a> -->
             </div>
         </div>
     </section>
-
-    <section class="product-detail supermodel hide">
+    <section class="product-detail  supermodel hide">
         <div class="product-detail-inner"><a class="product-detail-close">X</a>
             <div class="product-detail-image"><img src="" /></div>
             <div class="product-detail-text">
@@ -518,9 +765,60 @@
                     young girl from
                     Brooklyn learns
                     that in the world of high fashion things will not always be as glamorous as they seem...</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt4192916/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: 2015</h5>
+                    </div>
+                </div>
                 <a data-target=".modal-1" data-toggle="modal"
-                    data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1"
-                    class="btn btn-primary">Fragman</a>
+                    data-the-video="https://www.youtube.com/embed/lZn7x2V3PL4?" type="text/html" type="text/html"
+                    class="btn btn-primary">watch me</a>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail lights hide">
+        <div class="product-detail-inner"><a class="product-detail-close">X</a>
+            <div class="product-detail-image"><img src="" /></div>
+            <div class="product-detail-text">
+                <h3>Beyond the Lights</h3>
+                <p>Though she's been groomed for stardom all her life by an overbearing mother (Minnie Driver), singer
+                    Noni (Gugu Mbatha-Raw) is having trouble dealing with her success. Feeling unable to cope any
+                    longer, Noni tries to kill herself, but luckily Kaz (Nate Parker), the police officer assigned to be
+                    her b… </p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt3125324/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: November 14, 2014</h5>
+                    </div>
+                </div>
+                <a data-target=".modal-1" data-toggle="modal"
+                    data-the-video="https://www.youtube.com/embed/6FSwSgzsVEk?" type="text/html" type="text/html"
+                    class="btn btn-primary">watch me</a>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail back hide">
+        <div class="product-detail-inner"><a class="product-detail-close">X</a>
+            <div class="product-detail-image"><img src="" /></div>
+            <div class="product-detail-text">
+                <h3>My Girlfriend's Back</h3>
+                <p>Derek's road to success is clear until he meets an unexpected detour, he falls in love.</p>
+                <div class="price">
+                    <div class="price-binding">
+                        <h4>IMDb:<a href="https://www.imdb.com/title/tt1233328/" target="_blank">read</a></h4>
+                    </div>
+                    <div class="price-price">
+                        <h5>Date: 2010</h5>
+                    </div>
+                </div>
+                <a data-target=".modal-1" data-toggle="modal"
+                    data-the-video="https://www.youtube.com/embed/ir2QESb0TqI?" type="text/html" type="text/html"
+                    class="btn btn-primary">watch me</a>
             </div>
         </div>
     </section>
@@ -540,6 +838,7 @@
             </div>
         </div>
     </div>
+
 
     <footer class="footer-distributed">
 
@@ -572,17 +871,18 @@
 
     </footer>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
-
-    <script src="./js/ex.js"></script>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="//afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+<script src="//unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
+<script src="./js/ex1.js"></script>
+<script src="./js/ex.js"></script>
 
 </html>
