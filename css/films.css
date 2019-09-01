@@ -57,14 +57,44 @@ body{
     background-color: black;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
+
 .navbar a {
-  font-size: 17px;
+	font-size: 14px;
+  
+  }
+}
+
+@media screen and (min-width:400px) {
+
+.navbar a {
+	font-size: 14px;
+  
+  }
+}
+
+@media screen and (max-width:300px) {
+
+.navbar a {
+	font-size: 13px;
+  
+  }
+}
+
+@media screen and (min-width:300px) {
+
+.navbar a {
+	font-size: 13px;
   
   }
 }
 
 /* slider */
+
+.items{
+  margin-top: 100px;
+ 
+}
 
 .flickity-enabled {
   position: relative;
