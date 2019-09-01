@@ -16,7 +16,7 @@ body {
 @media screen and (max-width:400px) {
 
 .navbar a {
-	font-size: 12px;
+	font-size: 13px;
   
   }
 }
@@ -114,7 +114,6 @@ header{
 	 background: #eaeaea;
 	 margin: 3rem;
 	 padding: 10px;
-	 
 }
  .blog-card {
 	 display: flex;
@@ -291,14 +290,10 @@ header{
 	}
 }
  
-/*  Pic Gallery */
-
 #gallery {
-	 padding-top: 40px;
-	 margin-bottom: 100px;
-	
-	 
-
+     padding-top: 40px;
+     margin-bottom: 100px;
+    
 }
  @media screen and (min-width: 991px) {
 	 #gallery {
@@ -308,11 +303,9 @@ header{
  .img-wrapper {
 	 position: relative;
 	 margin-top: 15px;
-	 
 }
  .img-wrapper img {
 	 width: 100%;
-	 
 }
  .img-overlay {
 	 background: rgba(0, 0, 0, 0.7);
@@ -329,7 +322,6 @@ header{
  .img-overlay i {
 	 color: #fff;
 	 font-size: 3em;
-	 
 }
  #overlay {
 	 background: rgba(0, 0, 0, 0.7);
@@ -395,10 +387,10 @@ header{
 	 font-size: 2em;
 	 transition: opacity 0.8s;
 	 position: absolute;
-	 /* top: 15px; */
-	 top: 45px;
-	 right: 15px;
-	 
+	 top: 15px;
+     right: 15px;
+     margin-top: 27px;
+     
 }
  #exitButton:hover {
 	 opacity: 0.7;
@@ -409,12 +401,6 @@ header{
 	}
 }
  
-
-
-
-
-
-
 
 
 /* Footer */
