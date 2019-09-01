@@ -277,6 +277,8 @@ hr {
   .direct-contact-container, .form-wrapper {
     float: none;
     margin: 0 auto;
+    
+    
   }  
   .form-control, textarea {
     max-width: 340px;
@@ -288,7 +290,8 @@ hr {
   } 
   .direct-contact-container {
     margin-top: 60px;
-    max-width: 280px;
+    max-width: 380px;
+    
   }  
   .social-media-list {
     left: 0;
@@ -298,6 +301,7 @@ hr {
     width: 55px;
     line-height: 55px;
     font-size: 2rem;
+    
   }
   .social-media-list li:after {
     width: 55px;
