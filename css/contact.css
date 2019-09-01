@@ -1,15 +1,3 @@
-header{
-  background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat;
-  background-size:cover;
-  padding:20px;
-  text-align:center;
-  height: 400px;
-}
-h1{
-  color:#FFF;
-  
-  padding-top:120px;
-}
 
 .scrolled {background-color: rgba(0,0,0,.5);}
 

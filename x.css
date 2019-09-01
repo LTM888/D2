@@ -1,70 +1,49 @@
-header{
-  background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat;
-  background-size:cover;
-  padding:20px;
-  text-align:center;
-  height: 400px;
-}
-h1{
-  color:#FFF;
-  
-  padding-top:120px;
-}
-body{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Lexend Exa', sans-serif;
-}
 .scrolled {background-color: rgba(0,0,0,.5);}
 
-.contact-title{
-    margin-top: 50px;
-    margin-bottom: 25px;
-    /* margin-top: 100px; */
-    color: #fff;
-    text-transform: uppercase;
-    transition: all 4s ease-in-out;
-}
-
-.contact-title h1{
- font-size: 32px;
- line-height: 10px;
-}
-
-.contact-title h2{
-    font-size:  16px;
-}
-
-form {
-    width: 600px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: #FFF;
-    font-size: 18px;
-    /* margin-bottom: 25px; */
-    margin: 0 auto;
-}
-
-input {
-    height: 45px;
-}
-
-form .submit{
-    background: red;
-    border-color: #fff;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    /* margin-top: 20px; */
-    margin-bottom: 25px;
-}
-
-form .submit:hover {
+.my-nav {
     background-color: black;
-    cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navbar a {
+  font-size: 17px !important;
+  font-family: 'Lexend Exa', sans-serif;
+  }
+
+
+@media screen and (max-width:400px) {
+
+.navbar a {
+	font-size: 14px;
+  
+  }
+}
+
+@media screen and (min-width:400px) {
+
+.navbar a {
+	font-size: 14px;
+  
+  }
+}
+
+@media screen and (max-width:300px) {
+
+.navbar a {
+	font-size: 13px;
+  
+  }
+}
+
+@media screen and (min-width:300px) {
+
+.navbar a {
+	font-size: 13px;
+  
+  }
 }

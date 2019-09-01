@@ -74,101 +74,16 @@
     </div>
 </nav>
 
-<div class="contact-title">
-    <h1>Say Hello</h1>
-    <h2>We are always ready to searve you</h2>
-</div>
-
-<div class="contact-form">
-    <form id="contact-form" method="post" action="contact-form-handler.php">
-        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-        <br>
-        <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-        <br>
-
-        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
-        <br>
-
-        <input type="submit" class="form-control submit" value="SEND MESSAGE">
-
+<section class="contact">
+    <p>SEND E-MAIL</p>
+    <form class="contact-form" action="contactform.php" method="post">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="email" placeholder="Subject">
+        <input type="text" name="subject" placeholder="Message">
+        <textarea name="message"  placeholder="Message"></textarea>
+        <button type="submit" name="submit">SEND MESSAGE</button>
     </form>
-</div>
-<!-- <section id="contact"> -->
-<!-- 
-    <h1 class="section-header">CONTACT</h1>
-
-    <div class="contact-wrapper"> -->
-
-        <!---------------- 
-
-      CONTACT PAGE LEFT 
-    
-      ----------------->
-
-        <!-- <form id="contact-form"  method="post" action="contact-form-handler.php">
-
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" id="name" placeholder="NAME" required name="name" value="">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL" required name="email" value="">
-                </div>
-            </div>
-
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" >
-                <div class="button">
-                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                </div>
-
-            </button>
-
-        </form> -->
-
-        <!---------------- 
-
-      CONTACT PAGE RIGHT 
-    
-      ----------------->
-
-        <!-- <div class="direct-contact-container">
-
-            <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"> Los Angeles |
-                            CA</span></i></li>
-
-
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                href="mailto:#" title="Send me an email">Datariturner11@gmail.com</a></span></i></li>
-
-            </ul>
-
-            <hr>
-            <ul class="social-media-list">
-                <li><a href="https://www.facebook.com/DatariLTurner" target="_blank" class="contact-icon">
-                        <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="https://twitter.com/DatariTurner" target="_blank" class="contact-icon">
-                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/boygirldream_movie/" target="_blank" class="contact-icon">
-                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-            <hr>
-
-            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
-        </div>
-
-    </div>
-
-</section> -->
+</section>
 
 <footer class="footer-distributed">
 
