@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Datari Turner Contact</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Datari Turner Productions Home Site.">
+    <meta name="Datari Turner Productions" content="noindex, nofollow">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 
@@ -66,23 +82,23 @@
     
       ----------------->
 
-        <form class="form-horizontal" role="form" method="post" action="contact.php">
+        <form class="form-horizontal" role="form" method="post" action="contact-form-handler.php">
 
             <div class="form-group">
                 <div class="col-sm-12">
-                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" required name="name" value="">
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" required name="email" value="">
                 </div>
             </div>
 
             <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
 
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" >
                 <div class="button">
                     <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
                 </div>
