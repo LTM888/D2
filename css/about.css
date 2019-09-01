@@ -21,6 +21,12 @@ font-family: 'Lexend Exa', sans-serif;
     margin-top: 0;
 }
 
+.navbar a {
+  font-size: 17px !important;
+  
+  }
+
+
 @media screen and (max-width:400px) {
 
 .navbar a {

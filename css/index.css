@@ -13,6 +13,13 @@ body {
  margin: 0 auto;
 }
 
+
+.navbar a {
+  font-size: 17px !important;
+  
+  }
+
+
 @media screen and (max-width:400px) {
 
 .navbar a {
