@@ -57,9 +57,14 @@ body{
     background-color: black;
 }
 
+.navbar a {
+  font-size: 17px !important;
+  
+  }
+
 @media screen and (max-width:375px) {
 .navbar a {
-  font-size: 17px;
+  font-size: 17px ;
   
   }
 }
